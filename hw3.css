@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    color: white;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: rgb(255, 88, 88);
+    box-shadow: 0 8px 32px 0 rgb(255, 88, 88);
+
+    border-radius: 6px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
+}
+
+    
+button{
+    width: 20%;
+    height: 30px;
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: background-color 0.15s, color 0.15s, transform 0.15s;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgb(255, 189, 189);
+    color: white;
+    transform: scale(1.3);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#btns1{
+    width: 95%;
+    min-width: 300px;
+    display: flex;
+    justify-content: space-around;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+}
+
+.namee{
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+}
+
+li{
+    margin: 10px 0;
+    text-align: center;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 10px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 10px;
+}
+
+#notifContainer{
+    position: fixed;
+    top: 300px;
+    right: calc(20% - 25px);
+}
+
+#notifContainer img{
+    width: 50px;
+    height: auto;
+    transition: transform 0.15s;
+}
+
+#notifContainer img:hover{
+    cursor: pointer;
+}
+
+    #notifContainer img:active{
+    transform: scale(1.2);
+    }
+
+#notifCounter{
+    position: absolute;
+    margin: 0;
+    bottom: 35px;
+    right: -15px;
+    background-color: red;
+    padding: 4px 10px;
+    border-radius: 100%;
+    pointer-events: none;
+}
+
+.notif{
+    position: absolute;
+    background: rgb(255, 88, 88);
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 2px 20px;
+    left: -85%;
+}

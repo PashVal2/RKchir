@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+
+
+  background-image: url("stars.png");
+  background-size: 50%;
+  background-repeat: repeat;
+
+  overflow-x: hidden;
+}
+
+#centeredElement {
+  position: absolute;
+  border: 2px solid red;
+}
+
+#centeredImage {
+  position: absolute;
+}
+
+
+#notification-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100px;
+}
+
+.notification {
+  background: linear-gradient(red, blue);
+  color: #000000;
+  padding: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
+
+
+
+
+
+#ficusContainer{
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  top: 0;
+}
+
+.ficus{
+  position: absolute;
+
+  pointer-events: none;
+  height: auto;
+}
+
+
+
+
+#mainContent{
+  position: absolute;
+  margin-top: 100vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text{
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 56px;
+  text-align: center;
+}
+
+#text2{
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+
+.appearAnim{
+  animation: forwards appear 1s;
+}
+
+.disappearAnim{
+  animation: forwards disappear 1s;
+}
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes disappear{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

@@ -1,0 +1,125 @@
+body{
+  background-color: white;
+}
+
+#contents {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.l1{
+  display: block;
+}
+
+#images{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mainImgContainer{
+  background-color: grey;
+  width: 35%;
+}
+
+#mainImg{
+  background-color: grey;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#miniImgsContainer{
+  background-color: grey;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.miniimg{
+  width: 15%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.selected {
+  background-color: #cce5ff;
+  user-select: none;
+}
+
+.slider-container {
+  width: 300px;
+  position: relative;
+}
+
+.slider-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+}
+
+.slider {
+  width: 10px;
+  height: 20px;
+  background-color: #002fff;
+  border-radius: 20%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.products, .cart {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 200px;
+}
+
+.product {
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.cart {
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#total-cost {
+  margin-top: 10px;
+}
+
+
+#floatingBox {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, red, blue);
+  color: #fff;
+  z-index: 10;
+  border-radius: 50px;
+  top: 10px;
+  left: 10px;
+}
+
+#floatingBox1 {
+  position: absolute;
+  background-color: #ffffff00;
+  color: #ff0000;
+  box-shadow: 2px 2px 2px 2px black;
+  font-size: 40px;
+  z-index: 10;
+  top: 10px;
+  left: 1000px;
+}
+
+#containerAnim, 
+#containerAnim1{
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}

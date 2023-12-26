@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="hw15.css">
+</head>
+<body>
+
+  <div id="containerAnim">
+    <div id="floatingBox"></div>
+  </div>
+  <div id="containerAnim1">
+    <div id="floatingBox1">ERROR</div>
+  </div>
+
+  <div id="contents">
+    <a class="l1" href="https://google.com">Link 1</a>
+    <div class="l2">
+        <a href="https://google.com">
+            <i>Nested Link 2</i>
+        </a>
+    </div>
+  </div>
+  <div id="images">
+    <div id="mainImgContainer">
+      <img id="mainImg" src="Рисунок1.jpg" alt="cat">
+    </div>
+    <div id="miniImgsContainer">
+      <img class="miniimg" onclick="changePic(0)" src="Рисунок1.jpg" alt="cat">
+      <img class="miniimg" onclick="changePic(1)" src="Рисунок2.png" alt="cat">
+      <img class="miniimg" onclick="changePic(2)" src="fredy.png" alt="cat">
+      <img class="miniimg" onclick="changePic(3)" src="papich.png" alt="cat">
+      <img class="miniimg" onclick="changePic(4)" src="clown.jpg" alt="cat">
+    </div>
+  </div>
+
+  <ul id="selectableList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <div class="slider-container">
+    <div class="slider-bar" id="sliderBar">
+      <div class="slider" id="slider"></div>
+    </div>
+  </div>
+
+  <div class="products" id="products">
+    <div class="product" data-price="100" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">Item 1 - $100</div>
+    <div class="product" data-price="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">Item 2 - $200</div>
+  </div>
+
+  <div class="cart" id="cart" ondrop="drop(event)" ondragover="allowDrop(event)">
+    Cart
+    <div id="total-cost">Total Cost: $0</div>
+  </div>
+
+  <script src="hw15.js"></script>
+</body>
+</html>

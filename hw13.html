@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="hw3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="sec">
+    <p class="namee">LIST</p>
+    <ul id="itemList"></ul>
+    <button onclick="addItem()">ADD</button>
+
+  </div>
+
+  <div id="notifContainer">
+    <img onclick="stopNotif()" src="vk.png" alt="bell">
+    <p id="notifCounter">0</p>
+
+    <div style="display: none;" class="notif">
+      <p>Уведомление</p>
+    </div>
+
+  </div>
+
+</body>
+<script src="hw3.js"></script>
+</html>
