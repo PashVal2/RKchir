@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика 2</title>
+    <!-- фавиконка -->
+    <link rel="icon" href="img/icon.jpg">
+    <!--Импорт css файла-->
+    <link rel="stylesheet" href="style.css">
+    <!--Импорт шрифта-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300&display=swap');
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <img src="img/chat.com_3.png" alt="Chat" id = "chat">
+    <header class = "top" name="top"> <!-- якорь -->
+        <div class = "logoTitle"> <!--Лого сайта-->
+            <img src="img/logo.webp" alt="Logo" class="logo" width = 60>
+            <h1 class="title">Домашние растения</h1> <!-- Тематика -->
+        </div>
+        
+        
+        <input type="checkbox" id="burger-toggle"> 
+        <label for="burger-toggle" id="burger">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </label>
+        <nav class=""> <!--Меню сайта-->
+            <ul class = "menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#about">О нас</a></li>
+                <a href = "#bottom"><img src="img/arrow.webp" class="arrow" width = 40></a>
+            </ul>
+    </header>
+
+    <main>
+        <section class = "citate"> <!--Стих-->
+            <pre> <!--Текст 1-->
+                Прекрасные растения своей красотой,  
+                дивным ароматом, 
+                ярким праздничным нарядом освещают нашу повседневную жизнь, 
+                делая ее прекрасной!
+            </pre>
+        </section>
+        
+        
+
+        <aside class = "rightTxt"> <!-- Боковой текст-->
+            <p>
+                Не упустите возможность привнести природу и живой зеленый взгляд в свой дом! Посетите наш магазин домашних растений прямо сейчас и создайте интерьер, который будет восхищать и радовать вас каждый день.
+            </p>
+            <a href = "#bottom">
+                Перейдите вниз, чтобы приобрести огромный советский фи...
+            </a>   
+        </aside>
+        <article class = "info">
+            <section title = "Chrisontema" class = "block"> <!-- Секция 1-->
+                <h2>Виды домашних растений</h2> <!--Заголовок-->
+                <h3>Хризантема</h3> <!--Подзаголовок-->
+                <div class = "imgChrisontema"> <!--Картинка-->
+                    <img src="img/Chrisontema.jpg" 
+                        alt="Хризантема" width = "200" height = "200"> <!-- Изображение-ссылка -->
+                </div>
+                <p>
+                    Одно из любимейших у цветоводов травянистых растений <i><a href = "https://ru.wikipedia.org/wiki/%D0%90%D1%81%D1%82%D1%80%D0%BE%D0%B2%D1%8B%D0%B5">семейства Астровые</a></i>, <!-- ссылка на внешний ресурс -->
+                    радующее обильным продолжительным цветением круглый год.
+                    Родиной хризантемы является Китай, первое упоминание о ней был в 551 году до н.э. Затем цветы, похожие на ромашки, завезли в Японию, и там они стали символом этой страны. В Европе хризантема оказалась в XVII веке, а в России - в  XIX столетии. На сегодняшний день благодаря работе селекционеров существует огромное множество видов и оттенков этого растения. В нашем интернет-магазине вы можете заказать кустовую хризантему, хризантему экстра, стандарт и сантини, а так же букеты с ними. Все перечисленные сорта представлены в разных окрасках.
+                    Однажды, в Стране восходящего солнца скверный дракон похитил небесное светило. Но при этом он сильно обжёгся, разозлился и стал разрывать Солнце на кусочки. На Землю падали искры, и они превращались в прекрасные цветы - хризантемы. Вторая легенда об этом растении гласит, что цветок был способен вернуть людям молодость и продлить их жизнь. Об этом узнал один из самых твёрдых и безжалостных азиатских императоров. Он отправил более полумиллиона молодых людей на поиски хризантемы. Но красивый цветок их очаровал, поэтому они не стали возвращаться домой, а построили новое государство на чудесном острове - Японию. А тем временем жестокий император умер от старости.
+                </p>
+            </section>
+
+            <section class="block image-list">
+                <img src="img/Chrisontema.jpg" alt="img">
+                <img src="img/Chrisontema.jpg" alt="img">
+                <img src="img/Chrisontema.jpg" alt="img">
+                <img src="img/Chrisontema.jpg" alt="img">
+                <img src="img/Chrisontema.jpg" alt="img">
+            </section>
+
+        </article>
+    </main>
+
+    <footer> <!-- Информация о разрабе-->
+        <div id = "about">
+            <h3>О нас</h3> <!--Заголовок-->
+            <p>
+                У нас вы найдете широкий выбор разнообразных растений - от величественных пальм, до изящных фикусов и цветущих орхидей. Каждое растение, представленное у нас, отобрано с любовью и заботой, чтобы превратить ваш дом в настоящий оазис зелени.
+            </p>
+        </div>
+        <div id = "contact">
+            <h3 >Контакты</h3> <!--Заголовок-->
+            <address class = "adres"> <!-- Контактные данные-->
+                <p>г. Москва</p>
+                <a href = "tel:+79150425771"> +7 (915) 042-57-71</a> <!-- номер телефона -->
+                <br>
+                    <a href="mailto:pashkint.valera@mail.ru">pashkint.valera@mail.ru</a> <!-- адресс почты -->
+                </br>
+            </address>
+        </div>
+        <h2><a name="bottom"></a></h2> <!-- якорь -->
+        
+    </footer>
+</body>
+</html>

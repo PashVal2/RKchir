@@ -1,0 +1,362 @@
+body { /* Оформление всего тела*/
+    margin: 0px;
+    background: url(img/bg_img.webp);
+    box-shadow: inset;
+}
+
+header { /* Оформление шапки */
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    background: url(img/bg_img.webp);
+}
+
+#chat {
+    width: 50px;
+    height: 50px;
+    position :fixed;
+    right: 40px;
+    bottom: 40px;
+    border: 2px solid rgb(26, 25, 25);
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.title {  /* для размещения соседних блоков. шрифт*/
+    display : inline-block;
+    font-family: 'Merriweather', serif;
+    padding-left: 20px;
+}
+
+.logoTitle { /* задник для шапки */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #7fffd4f2;
+}
+
+.logo { /* для размещения соседних блоков у логотипа*/
+    display : inline-block;
+    margin-top: -10px;
+    padding-left: 30px;
+}
+
+.menu { /* задник у меню */
+    top: 10px;
+    list-style-type: none;
+    margin: 0;
+    margin-top: -22px;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(61, 58, 58);
+}
+  
+.menu li { /* боковое размещение меню */
+    float: left;
+}
+  
+.menu  li a { /* Пункты у меню */
+    display: inline-flex;
+    color: whitesmoke;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+  
+.menu  li a:hover { /* Пункты при наведении */
+    background-color: rgb(51, 49, 49);
+}
+
+.menu  li a:active{ /* Пункты при нажатии */
+    background-color: rgb(41, 39, 39);
+}
+
+.arrow { /* расположение стрелки*/
+    float: right;
+    background-color: rgb(75, 72, 72);
+    padding-bottom: 11px;
+}
+
+.arrow:hover { /* стрелка при наведении*/
+    background-color: rgb(62, 59, 59);
+}
+
+.citate { /* обводка у стиха */
+    background: #efeff3;
+    font-style: oblique;
+    border : 2px solid rgb(61, 58, 58);
+    word-spacing: -5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* автоматический внешний отступ у тэга pre*/
+.citate pre{ 
+    margin : auto;
+}
+
+.info h2 { /*Шрифт для заголовков*/
+    text-indent: 1.25cm;
+    font-family: 'Merriweather', serif;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.info h3 { /*Шрифт для подзаголовков*/
+    font-family: 'Merriweather', serif;
+    margin-bottom: 5px;
+    margin-top: 0px;
+}
+
+.imgChrisontema { /* для размещения соседних блоков */
+    display : inline-block;
+    overflow: hidden; /*Переполнение обрезается, остальное содержимое невидимо*/
+    float: right;
+    margin: 5px;
+}
+
+.imgChrisontema img { /*Плавная анимация*/
+    transition: transform 0.15s;
+}
+
+.imgChrisontema img:hover{ /*Картинка зризонтемы при наведении*/
+    transform: scale(1.1);
+}
+
+.rightTxt { /* Боковой текст у картинки */
+    position: sticky;
+    text-align: justify;
+    float: right;
+    width :29%;
+    padding-left: 10px;
+    padding-left: 10px;
+    margin-top: 85px;
+    top: 140px;
+    box-shadow: inset 7px 0 5px -5px #296272;
+    background: #efeff3;
+}
+.rightTxt a { /*Дефолтный стиль у ссылки*/
+    text-decoration: none;
+}
+
+.rightTxt a:visited { /*Посещенный уасток бокового текста*/
+    color: #575657;
+}
+
+.imgFicus { /* Оформление картинки с фикусом*/
+    float: left;
+    margin-right: 10px;
+}
+
+.block p { /* Оформление текста с тэгом p*/
+    margin-right: 10px;
+    text-indent: 60px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #434144;
+    margin-bottom: 0px;
+    padding-bottom: 3px;
+}
+
+.block { /*Оформление секций*/
+    border-radius: 10px;
+    background: #efeff3;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.3) 0px 19px 38px;
+    width: 68.1%;
+    margin-left: 10px;
+    padding-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.block dl { /*Оформление списка у секций*/
+    margin-right: 10px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #434144;
+    padding-bottom: 3px;
+    margin-bottom: 0px;
+}
+
+footer { /* стилизация задней части подвала */
+    padding-left: 5px;
+    border-top: 2px solid black;
+    background-color: rgb(198 198 198);;
+    margin-bottom: -16px;
+    display: inline-flex;
+}
+
+#about { /* Оформление участка подвала О нас*/
+    
+    text-align: justify;
+}
+
+#contact { /* Оформление участка подвала контакты*/
+    margin-left: 50px;
+}
+
+.socials { /* Оформление значка соц сети*/
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-left: 1300px;
+    margin-top: 110px;
+}
+
+/*Автоматический внешний отступ в подвале,
+шрифт у заголовков*/
+footer h3 { 
+    margin: auto;
+    font-family: 'Merriweather', serif;
+}
+
+footer a { /*дефолтный стиль для адресса*/
+    text-decoration: none;
+    font-style: normal;
+}
+
+
+
+
+.image-list {
+    display: flex;
+    justify-content: space-evenly; /* Равномерное распределение между изображениями */
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+}
+  
+.image-list img {
+    flex: 1;
+    margin: 10px; /* Пространство между изображениями (можете настроить по своему вкусу) */
+}
+  
+.image-list img {
+    max-width: 200px; /* Ограничиваем ширину изображения по ширине контейнера */
+    max-height: 200px;
+}
+  
+/* Стили для мобильных устройств (медиазапрос) */
+@media (max-width: 768px) {
+    .image-list img {
+      flex-basis: calc(50% - 5px); /* Половина ширины контейнера, с учетом маргина */
+    }
+}
+
+  /* Стили для планшетов (медиазапрос) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .image-list li {
+      flex-basis: calc(33.33% - 5px); /* Треть ширины контейнера, с учетом маргина */
+    }
+}
+  
+  /* Стили для больших экранов (медиазапрос) */
+@media (min-width: 1025px) {
+    .image-list li {
+      flex-basis: calc(25% - 5px); /* Четверть ширины контейнера, с учетом маргина */
+    }
+}
+
+input[type="checkbox"] { /* все input имеющие type checkbox*/
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 500px) and (min-width: 0){
+    aside {
+        display: none;
+    }
+    .block {
+        width: 94%;
+    }
+    nav {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(61, 58, 58);
+        width: 100%;
+        height: 130px;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+        transform: translateY(-100%);
+    }
+    
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+    }
+    
+    .arrow {
+        margin-top: 20px;
+    }
+
+    #burger-toggle:checked + #burger + nav {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    #burger {
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        top: 65px;
+        left: 15px;
+        z-index: 2;
+    }
+    
+    .burger-line {
+        width: 30px;
+        height: 3px;
+        background-color: #000000;
+        margin: 5px 0;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .burger-line::after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 1px;
+        background-color: blue;
+    }
+
+    .burger-line::before {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 1px;
+        background-color:   white;
+    }
+
+    /* Стили для линий бургер-меню (после активации чекбокса) */
+    #burger-toggle:checked + #burger .burger-line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        background-color:red;
+    }
+    
+    #burger-toggle:checked + #burger .burger-line:nth-child(2) {
+        transform: rotate(45deg) translate(0, -1px);
+        background-color:red;
+    }
+    
+    #burger-toggle:checked + #burger .burger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+        background-color: red;
+    }
+}
